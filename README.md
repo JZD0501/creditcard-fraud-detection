@@ -2,7 +2,7 @@
 
 本项目基于 Kaggle 公布的信用卡交易数据集，复现了线性回归与逻辑回归两种经典机器学习算法，分别用于预测正常交易金额和识别欺诈交易行为。同时引入欠采样与 SMOTE 过采样策略，解决样本类别极度不平衡问题，提升模型识别能力。
 
-# 项目结构：
+# 项目结构
 creditcard-fraud-detection/
 ├── fraud_detection.py         # 主程序，包含完整建模与评估流程
 ├── creditcard.csv             # Kaggle 数据集文件（需手动放置）
@@ -11,21 +11,21 @@ creditcard-fraud-detection/
 ├── README.md                  # 项目说明文件（即本文件）
 └── requirements.txt           # Python 依赖库清单
 
-# 使用算法与处理策略：
+# 使用算法与处理策略
 - 线性回归：用于对正常交易金额建模与预测
 - 逻辑回归：用于对交易是否欺诈进行二分类预测
 - 欠采样（RandomUnderSampler）：减少正常样本数
 - SMOTE 过采样：生成新的欺诈类样本缓解数据不平衡
 
-# 依赖环境：
+# 依赖环境
 本项目使用 Python 3.10+，推荐使用虚拟环境或 Anaconda。  
 
-# 数据准备：
+# 数据准备
 数据集下载地址（Kaggle）：
 https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 将下载后的 `creditcard.csv` 放入项目根目录。
 
-# 如何运行：
+# 如何运行
 运行主程序即可完成建模与可视化，自动完成以下任务：
 - 数据加载与预处理
 - 正常交易金额预测（线性回归）
